@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Clothes - FernFashion</title>
+    <link rel="stylesheet" href="clothessell.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">FernFashion</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clothessell.html">Sell</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="sell-section">
+        <div class="container">
+            <h2>Sell Your Clothes</h2>
+            <form class="sell-form">
+                <div class="form-group">
+                    <label for="item-name">Item Name:</label>
+                    <input type="text" id="item-name" name="item-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="item-description">Item Description:</label>
+                    <textarea id="item-description" name="item-description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="item-condition">Item Condition:</label>
+                    <select id="item-condition" name="item-condition" required>
+                        <option value="">Select Condition</option>
+                        <option value="new">New with tags</option>
+                        <option value="like-new">Like new</option>
+                        <option value="good">Good condition</option>
+                        <option value="fair">Fair condition</option>
+                        <option value="poor">Poor condition</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="item-image">Upload Image:</label>
+                    <input type="file" id="item-image" name="item-image" accept="image/*" required>
+                </div>
+                <button type="submit" class="sell-btn" onclick="
+                alert('we will be live soon!!!');
+                ">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FernFashion. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
